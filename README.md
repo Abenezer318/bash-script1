@@ -29,7 +29,7 @@ built with Bash scripting on Ubuntu.
 
 ## Project Screenshot
 
-![Linux Server Audit](bash script.png)
+![Linux Server Audit](bash.png)
 
 ## How to Run
 
