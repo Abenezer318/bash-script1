@@ -5,8 +5,7 @@ on: push
 jobs:
  first-job:
   runs-on: ubuntu-latest
-
-steps:
-- name: welcome
- run: echo "Hellow from github action"
+  steps:
+  - name: welcome
+    run: echo "Hellow from github action"
 
