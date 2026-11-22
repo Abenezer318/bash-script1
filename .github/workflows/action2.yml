@@ -1,0 +1,19 @@
+name: Bash Syntax Check
+
+on: push
+
+jobs:
+  bash-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+
+      - name: Check Bash syntax
+        run: |
+          for file in *.sh; do
+            [ -f "$file" ] || continue
+            echo "Checking $file"
+            bash -n "$file"
+          done
